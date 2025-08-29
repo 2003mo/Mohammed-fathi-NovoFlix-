@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main"
-    android:background="@color/main_color"
+    android:background="@drawable/background"
     tools:ignore="ExtraText">
 
-    <ImageView
-        android:id="@+id/profileImage"
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"        android:id="@+id/profileImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/profile"
@@ -213,21 +213,24 @@
         android:layout_marginTop="51dp"
         android:layout_toRightOf="@+id/tx5"
         android:thumbTint="#FF5722"
-        android:trackTint="#666666"
+        android:trackTint="@color/white"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
+    <TextView
         android:id="@+id/bt_logout"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:text="Log out"
         android:textSize="20sp"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:layout_below="@+id/im5"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#FF5722" />
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/input_style" />
     <LinearLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"

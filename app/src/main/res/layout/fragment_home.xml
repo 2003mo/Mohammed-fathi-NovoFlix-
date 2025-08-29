@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- العنوان -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What would you like to watch?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- شريط البحث (خاص بالهوم) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/search"
+            app:tint="#CCCCCC" />
+
+        <EditText
+            android:id="@+id/et_search_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search Movies..."
+            android:minHeight="48dp"
+            android:background="@drawable/input_style"
+            android:paddingStart="8dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            app:tint="#CCCCCC" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTopRated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Rated"
+        android:textSize="17sp"
+        android:backgroundTint="#009688"
+        android:textColor="@android:color/white"
+        android:elevation="6dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- شبكة الأفلام -->
+    <GridView
+        android:id="@+id/gridMovies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="12dp"
+        android:padding="4dp"/>
+</LinearLayout>

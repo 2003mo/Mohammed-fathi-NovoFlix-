@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No favorites yet"
+        android:textColor="#CCCCCC"
+        android:layout_centerInParent="true"/>
+
+    <GridView
+        android:id="@+id/gridFavs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="12dp"
+        android:padding="4dp"
+        android:layout_below="@+id/tvEmpty"/>
+</RelativeLayout>
